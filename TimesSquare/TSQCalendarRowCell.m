@@ -87,7 +87,7 @@
     self.todayButton = [[UIButton alloc] initWithFrame:self.contentView.bounds];
     [self.contentView addSubview:self.todayButton];
     [self configureButton:self.todayButton];
-    [self.todayButton addTarget:self action:@selector(todayButtonPressed:) forControlEvents:UIControlEventTouchDown];
+    [self.todayButton addTarget:self action:@selector(todayButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     
     [self.todayButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [self.todayButton setBackgroundImage:[self todayBackgroundImage] forState:UIControlStateNormal];
