@@ -159,7 +159,6 @@
 - (void)scrollToDate:(NSDate *)date animated:(BOOL)animated
 {
   NSInteger section = [self sectionForDate:date];
-  [self.tableView reloadData];
   [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:section] atScrollPosition:UITableViewScrollPositionTop animated:animated];
 }
 
